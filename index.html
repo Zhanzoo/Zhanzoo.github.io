@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant japonais traditionnel - cuisine saine</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <section class="landing">
         <div class="landingImg">
             <header>
-                <div class="logo">Sakura Sushi</div>
+                <div class="logo"><h1>Sakura Sushi</h1></div>
                 <div class="hamburger">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -29,52 +30,45 @@
             </header>
         </div>
     </section>
-        <div class="cardContainer">
-            <div class="card">
-                <h2>Nos Menus</h2>
-                <div class="cardImg img-menu"></div>
-                <button type="button">Voir</button>
-            </div>
 
-            <div class="card">
-                <h2>Notre Cartes</h2>
-                <div class="cardImg img-card"></div>
-                <button type="button">Voir</button>
-            </div>
-
-            <div class="card">
-                <h2>Nos Plats</h2>
-                <div class="cardImg" id="img-plat"></div>
-                <button type="button">Voir</button>
-            </div>
-
-            <div class="card">
-                <h2>Nos Désserts</h2>
-                <div class="cardImg" id="img-dessert"></div>
-                <button type="button">Voir</button>
-            </div>
-
-            <div class="card">
-                <h2>Nos boissons</h2>
-                <div class="cardImg" id="img-boisson"></div>
-                <button type="button">Voir</button>
-            </div>
-            
+     <!--PRESENTATION-->
+    <section class="sect-presentation">
+        <div class="img-presentation">
         </div>
+        <div class="text-presentation">
+            <h2>Notre concept</h2>
+            <p>Restaurant traditionnel situé dans le centre de Paris, nous proposons des plats atypique. Venez découvrir nos créations.</p>
+        </div>
+    </section>
 
+    <!-- SERVICES-->
+    <section class="services">
+        <div class="service fresh">
+            <h2><i class="fa-solid fa-leaf"></i></h2>
+            <p>Fraîcheur garantie</p>
+        </div>
+        <div class="service speed-delivery">
+            <h2><i class="fa-solid fa-truck"></i></h2>
+            <p>Livraison express</p>
+        </div>
+        <div class="service secure-payment">
+            <h2><i class="fa-solid fa-credit-card"></i></h2>
+            <p>Paiement sécurisé</p>
+        </div>
     </section>
 
     <section class="gallery">
         <h2>Nos plus belles créations</h2>
         <div class="wrapper-grid">
-            <a href="" class="grid-img1 grid-box"></a>
-            <a href="" class="grid-img2 grid-box"></a>
-            <a href="" class="grid-img3 grid-box"></a>
-            <a href="" class="grid-img4 grid-box"></a>
-            <a href="" class="grid-img5 grid-box"></a>
-            <a href="" class="grid-img6 grid-box"></a>
+            <div class="grid-img1 grid-box"></div>
+            <div class="grid-img2 grid-box"></div>
+            <div class="grid-img3 grid-box"></div>
+            <div class="grid-img4 grid-box"></div>
+            <div class="grid-img5 grid-box"></div>
+            <div class="grid-img6 grid-box"></div>
         </div> 
     </section>
+
 
     <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10487.395913846072!2d2.3954034!3d48.9182695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2aca54856795fca9!2sDream%20Sushi!5e0!3m2!1sfr!2sfr!4v1675294954951!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -98,6 +92,22 @@
         </div>
     </section>
 
+
+    <!--Contact form-->
+    <section class="container">
+        <h2 class="title-form">Venez nous faire part de vos envies</h2>
+        <div class="container-form">
+            <div class="left-img"></div>
+            <form class="form">
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Prénom">
+                <input type="email" placeholder="Email">
+                <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+                <input class="form-contact-valid" type="button" value="ENVOYER">
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="adress2">
             <h3>L'adresse du restaurant</h3>
@@ -118,7 +128,5 @@
             </ul>
         </div>    
     </footer>
-
-
 </body>
 </html>
